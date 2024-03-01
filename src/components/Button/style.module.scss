@@ -1,0 +1,27 @@
+.buttonContainer{
+    background-color: var(--FC-TITTLE);
+
+    padding:0.8rem;
+
+
+    border-radius: 0.5rem;
+
+    box-shadow: 2px 2px 2px var(--BOX-SHADOW);
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+
+
+    color: white;
+    
+    font-family: 'Roboto', sans-serif;
+
+
+    .loading{
+        background-color: var(--LIGHT-800);
+    }
+}

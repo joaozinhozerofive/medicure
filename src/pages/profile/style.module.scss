@@ -1,0 +1,86 @@
+.profileContainer{
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'menu content'
+    ;
+
+    grid-template-columns: auto 100%;
+    grid-template-rows: auto 100vh;
+
+    position: relative;
+
+
+
+    .content{
+        grid-area: content;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 3rem 0 0 5rem;
+
+        width: 100%;
+
+        h1{
+            color: var(--FC-TITTLE);
+            display: flex;
+            align-items: center;
+
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+
+
+
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            width: 40rem;
+            max-width: 90%;
+            .input{
+                width: 100%;
+            }
+
+            button{
+                display: flex;
+                justify-content: center;
+                width: 95%;
+            }
+
+            
+        }
+    }
+}
+
+@media(min-width:768px){
+    .profileContainer{
+        .content{
+            padding-left: 15rem;
+
+            h1{
+                font-size: 130%;
+            }
+
+            form{
+                gap: 2rem;
+                .input{
+                    >input{
+                        font-size: 1.4rem;
+                    }
+                    padding: 1.5rem;
+                    
+                }
+            }
+        }
+    }
+}
+
+
+
+
+

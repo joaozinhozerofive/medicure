@@ -1,0 +1,39 @@
+.input {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    padding: 0.8rem;
+
+
+    border-radius: 0.3rem;
+    max-width: 100%;
+
+
+    background: var(--BG-HEADER);
+
+    
+  
+    > input {
+      max-width: 80%;
+      color: var(--FC-TITTLE);
+
+      font-size: 1.2rem;
+
+      position: relative;
+    }
+  
+    input[type="date"] {
+    position: relative;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+  
+      &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+      }
+    }
+  }
+  

@@ -1,0 +1,51 @@
+.isNew, .tagItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.5rem;
+
+    border-radius: 1rem;
+    
+    width: 100%;
+    margin: 0 auto;
+
+    .input{
+        background: transparent;
+    }
+
+    input{
+        width: 100%;
+        color: var(--LIGHT-100);
+
+        display: flex;
+    }
+}
+
+.isNew{
+    border: 1px dashed var(--FC-TITTLE);
+
+    color: var(--FC-TITTLE);
+    input{
+        width: 100%;
+        color: var(--FC-TITTLE);
+
+        display: flex;
+    }
+}
+
+
+.tagItem{
+    background: var(--FC-TITTLE);
+    
+    box-shadow: 6px 6px 6px  var(--BOX-SHADOW);
+
+    display: flex;
+    justify-content: center;
+
+   
+
+}
+
+

@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@100;500&family=Roboto:wght@400;700&display=swap);
+
+:root{
+
+    --BG-BODY : rgb(230, 223, 223);
+    --BG-HEADER: rgb(253, 248, 245);
+
+    --FC-INPUT : rgb(82, 79, 79);
+    --FC-TITTLE : rgb(0, 0, 0);
+
+    --BOX-SHADOW : rgba(0, 0, 0, 0.1) ;
+
+    --RED-100 :  rgb(219, 154, 154);
+    --RED-900 : rgb(206, 22, 22);
+
+    --BLUE-100 : rgb(140, 140, 204); 
+    --BLUE-900 : rgb(25, 25, 221);
+
+
+    --LIGHT-100: rgb(221, 219, 219);
+    --LIGHT-800 : rgb(180, 179, 179);
+
+
+    --ORANGE-800: rgb(245, 164, 15);
+
+    --BLUE-500 : #010127;
+
+
+    --percent: 70;
+
+
+    font-size: 62.5%;
+
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    outline: 0;
+
+    text-decoration: none;
+    list-style: none;
+
+
+    border: none;
+
+
+
+    font-size: 1.6rem;
+
+
+    ::-webkit-scrollbar{
+        width: 0.2rem;
+        height: 0.2rem;
+      }
+      ::-webkit-scrollbar-thumb{
+        background: rgb(173, 170, 170);
+        border-radius: 10rem;
+      }
+
+
+}
+
+html{
+    scroll-behavior: smooth;
+  }
+
+
+label{
+  font-family: 'Roboto', sans-serif;
+
+  font-weight: 800;
+
+}  
+
+
+body{
+
+    background-color: var(--BG-BODY);
+    
+    font-family: 'Mulish';
+}
+
+
+textarea{
+  width: 100%;
+
+
+  border-radius: 0.5rem;
+
+  height: 20rem;
+
+  padding: 1rem;
+
+  resize: none;
+
+  background-color: var(--BG-HEADER);
+
+  font-family: 'Roboto';
+}
+
+
+
+button{
+  all: unset;
+  cursor: pointer;
+}
+
+ul{
+  all: unset;
+}
+
+input{
+    border: none;
+    background: transparent;
+  }
+
+
+  svg{
+    cursor: pointer;
+  }
+
+
+  .overlay-custom-class-name{
+    display: none;
+  }
+
+
+ 

@@ -1,0 +1,171 @@
+.doctorListContainer{
+    position: relative;
+    
+    
+
+    .hidden{
+        display: none;
+    }
+
+    img{
+        width: 4rem;
+        height: 2rem;
+
+        border-radius: 50%;
+    }
+
+    .selectedDoctor, .list > main > div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2.2rem;
+    }
+
+    
+
+
+    .selectedDoctor {
+        width: 22rem;
+    }
+
+
+    h2{
+        font-size: 1rem;
+        font-family: 'Poppins';
+
+        color: var(--FC-TITTLE) ;
+
+        width: 15rem;
+    }
+
+
+    .list{
+
+        position: absolute;
+        right: -0.5rem;
+
+        margin-top: 3.2rem;
+        background-color: var(--BG-HEADER);
+        border-radius: 1rem;
+
+        box-shadow: 6px 6px 6px var(--BOX-SHADOW);
+
+        padding: 0.5rem;
+
+
+        main {
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+
+
+
+            max-height: 20rem;
+
+            overflow-y: auto;
+
+            div{
+                padding: 0.5rem;
+                width: 22rem;
+                justify-content: space-between;
+            }
+
+            div:hover{
+                filter: opacity(0.8);
+                cursor: pointer;
+            }
+            
+
+        }
+
+        
+
+        .triangle{
+            top: -1.2rem;
+            right: 1rem;
+            position: absolute;   
+            color: var(--BG-HEADER);
+        }
+    }
+
+    
+
+    
+}
+
+
+@media(min-width: 1024px){
+
+
+    .doctorListContainer{
+    
+        
+        .selectedDoctor {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            width: 26rem;
+        }
+
+        
+        .list > main > div{
+           width: 28rem;
+       }
+
+        h2{
+            font-size: 1.1rem;
+        }
+    
+        .list{
+        margin-top: 3.5rem;
+
+        }
+        
+        .doctorImage{
+            width: 4rem;
+            height: 4rem;
+        }
+        
+    }
+    
+
+}
+
+
+@media(min-width: 1440px){
+
+
+    .doctorListContainer{
+
+        .selectedDoctor {
+            width: 30rem;
+            gap: 1.5rem;
+        }
+    
+        h2{
+            font-size: 1.4rem;
+        }
+
+
+        .list > main > div{
+            width: 30rem;
+        }
+    
+    
+        .list{
+        margin-top: 4rem;
+
+        }
+
+
+        .doctorImage{
+            width: 4.5rem;
+            height: 4.5rem;
+        }
+        
+    }
+    
+    
+}

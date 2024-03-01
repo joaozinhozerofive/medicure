@@ -1,0 +1,140 @@
+.newTimeContainer{
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'menu content'
+    ;
+
+    grid-template-columns: auto 100%;
+    grid-template-rows: auto 100vh;
+
+    position: relative;
+    
+
+    .content{
+        grid-area: content;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-top: 3rem;
+
+        width: 100%;
+
+
+        .save, .delete{
+            margin: 2rem -2rem 0 0 ;
+            width: 35rem;
+            max-width: 50%;
+        }
+
+        .delete{
+            background: var(--RED-900);
+        }
+
+        h2{
+            color: var(--FC-TITTLE);
+            font-family: 'Roboto';
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+
+            margin-bottom: 2rem;
+            margin-right: -2rem;
+
+        }
+
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            gap: 1.5rem;
+
+            padding: 2rem 1rem;
+
+            border-radius: 0.8rem;
+            
+
+            width: 40rem;
+            max-width: 75%;
+
+
+            margin-right: -2rem;
+
+            
+
+            
+            label:nth-child(2){
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            label{
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                color: var(--FC-TITTLE);
+    
+                font-size: 1.4rem;
+
+                width: 80%;
+            }
+            .calendar{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+                
+
+                width: 30rem;
+                max-width: 60%;
+
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media(min-width:768px){
+    .newTimeContainer{
+        .content{
+            padding-left: 15rem;
+
+            form{
+
+                background-color: var(--BG-HEADER);
+                box-shadow: 6px 6px 6px var(--BOX-SHADOW);
+
+
+                label:nth-child(2){
+                    gap: 1rem;
+                    flex-wrap: wrap;
+
+                    max-height: 20rem;
+
+                    overflow-y: auto;
+
+                    .tag{
+                        width: 13rem;
+
+                        input{
+                            color: var(--LIGHT-100);
+                        }
+                    }
+
+                    .newTag{
+                        width: 13rem;
+                        color: var(--FC-TITTLE);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

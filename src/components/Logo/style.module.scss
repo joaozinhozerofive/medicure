@@ -1,0 +1,58 @@
+.logoContainer{
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+
+
+
+    .logoImg{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .logoTitle{
+        font-family: 'Poppins';
+        font-size: 2rem;
+    }
+
+}
+
+
+@media(min-width: 768px){
+    
+    .logoContainer{
+        gap: 1rem;
+    
+        .logoImg{
+            width: 3.2rem;
+            height: 3.2rem;
+        }
+    
+        .logoTitle{
+            font-size: 2.5rem;
+        }
+    
+    }
+
+}
+
+
+@media(min-width: 1440px){
+    .logoContainer{
+        gap: 1.2rem;
+    
+        .logoImg{
+            width: 4rem;
+            height: 4rem;
+        }
+    
+        .logoTitle{
+            font-size: 3rem;
+        }
+    
+    }
+
+    
+}

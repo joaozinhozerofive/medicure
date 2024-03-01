@@ -1,0 +1,109 @@
+.headerContainer{
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+
+    
+    padding: 0.8rem;
+
+    background-color: var(--BG-HEADER);
+
+
+    box-shadow: 0 6px 6px var(--BOX-SHADOW);
+
+    z-index: 1000;
+
+
+    .input{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        gap: 0.5rem;
+
+        width: 50%;
+
+        input{
+            font-size: 1.2rem;
+            font-family: 'Roboto' ;
+
+
+            color: var(--FC-INPUT);
+        }
+
+    }
+
+    .doctorList{
+        display: none;
+    }
+}
+
+
+@media(min-width: 768px){
+    .headerContainer{
+        padding: 1.2rem;
+    
+        .input{
+            gap: 1.2rem;
+    
+            width: 30%;
+    
+            input{
+                font-size: 1.5rem;
+            }
+    
+        }
+
+        .doctorList{
+            display: block;
+        }
+
+        
+    }
+
+
+   
+    
+}
+
+
+@media(min-width: 1024px){
+    .headerContainer{
+        padding: 1.5rem 3rem;
+    
+        .input{
+            gap: 1.5rem;
+    
+            width: 25%;
+    
+            input{
+                font-size: 1.8rem;
+            }
+    
+        }
+    }
+    
+}
+
+
+@media(min-width: 1440px){
+    .headerContainer{
+        justify-content: space-around;
+        padding: 1.5rem 3rem;
+    
+        .input{
+            width: 20%;
+    
+            input{
+                font-size: 1.8rem;
+            }
+    
+        }
+    }
+    
+}
+
+
+    

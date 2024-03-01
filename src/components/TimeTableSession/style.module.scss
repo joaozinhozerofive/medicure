@@ -1,0 +1,64 @@
+.sessionContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 25rem;
+    max-width: 100%;
+
+
+    border: 1px solid var(--FC-TITTLE) ;
+    border-radius: 0.8rem;
+    box-shadow:  0 2px 0 var(--BOX-SHADOW);
+
+    padding: 2rem;
+
+    position: relative;
+
+
+    
+
+
+    h1{
+        color: var(--FC-TITTLE);
+        font-family: 'Roboto', sans-serif;
+
+        font-size: 2rem;
+    }
+
+    .edit{
+        position: absolute;
+        right: 1rem;
+        
+    }
+
+
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+
+        >li{
+            background-color: var(--FC-TITTLE);
+            box-shadow:  6px 6px 6px var(--BOX-SHADOW);
+
+            color: var(--LIGHT-100);
+
+            padding: 0.5rem;
+
+            border-radius: 0.8rem;
+
+            font-size: 1.4rem;
+        }
+    }
+
+}
+
+@media(min-width:768px){
+    .sessionContainer{
+        width: 45rem;
+    }
+}

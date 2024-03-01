@@ -1,0 +1,154 @@
+.menuContainer{
+    grid-area: menu;
+    display: flex;
+    justify-content: center;
+
+
+    display: flex;
+    padding: 1rem;
+
+
+    background-color: var(--BG-HEADER);
+
+    box-shadow: 6px 0px 6px var(--BOX-SHADOW);
+
+
+    color: var(--FC-INPUT);
+
+
+    position: absolute;
+
+
+    overflow-y: auto;
+
+
+    height: 100vh;
+
+    z-index: 999;
+
+
+    .selectedMenu{
+        border-bottom:  1px solid var(--BLUE-500);
+
+        .icon{
+            color: var(--BLUE-500);
+        }
+        
+    }
+
+    .selectedMenu:hover{
+        .icon{
+            color: var(--FC-TITTLE);
+        }
+    }
+
+    
+    .toggleMenu{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .hidden{
+        display: none;
+    }   
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+
+        
+        font-family: 'Roboto', sans-serif;
+
+        
+
+        div{
+            margin-top: 1.5rem;
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+            gap: 0.5rem;
+            padding:  1rem;
+
+
+            font-size: 1.6rem;
+
+           color: var(--FC-TITTLE);
+
+
+            > svg{
+                width: 1.3rem ;
+            }
+
+        }
+
+        div:hover{
+            filter: brightness(2.1);
+            cursor: pointer;
+        }
+    }
+}
+
+
+@media(min-width: 768px){
+    
+    .menuContainer{
+        grid-area: menu;
+        display: flex;
+        justify-content: center;
+    
+        display: flex;
+        padding: 2rem;
+    
+    
+        background-color: var(--BG-HEADER);
+    
+        box-shadow: 6px 0px 6px var(--BOX-SHADOW);
+    
+    
+        color: var(--FC-INPUT);
+    
+        
+        .toggleMenu{
+            display: none;
+            justify-content: center;
+        }
+    
+    
+        .hidden{
+            display: block;
+        }
+    
+    
+    
+    
+        main > div{
+            margin-top: 2rem;
+
+            white-space: nowrap;
+        }
+    }
+    
+}
+
+
+@media(min-width: 1024px){
+    
+    .menuContainer{
+    
+        main > div{
+                font-size: 1.8rem;
+                gap: 1rem;
+    
+                > svg{
+                    width: 2rem ;
+                    font-size: 5rem;
+                }
+    
+            }
+            
+    }
+    
+}

@@ -1,0 +1,216 @@
+.newSchedulingContainer{
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'menu content'
+    ;
+
+    grid-template-columns: auto 100%;
+    grid-template-rows: auto 100vh;
+
+    position: relative;
+
+
+    .content{
+        grid-area: content;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+
+        overflow-y: auto;
+
+        padding-left: 3rem;
+
+        .hidden{
+            display: none;
+        }
+        
+
+        h2{
+
+            color: var(--FC-TITTLE);
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            gap: 1rem;
+
+            margin: 3rem 0;
+        }
+
+
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+
+            width: 50rem;
+            max-width: 85%;
+
+            button{
+                width: 90%;
+            }
+
+
+
+            textarea{
+                margin-top: 0.5rem;
+            }
+
+            .input{
+                margin: 0.5rem 0;
+
+                width: 100%;
+            }
+            
+
+            div{
+               width: 100%;
+                .code{
+                    width: 40%;
+                }
+
+                .name{
+                    position: relative;
+
+                
+
+                    .list{
+                         display: flex;
+                         flex-direction: column;
+                         gap: 0;
+                         width: 100%;
+
+
+                         position: absolute;
+                         right: 0;
+                         bottom: -2rem;
+
+                         z-index: 997;
+
+
+
+
+                        div{
+                            display: flex;
+                            align-items: center;
+
+                            background-color: var(--BG-HEADER);
+
+                            width: 100%;
+
+                            border: 0.5px solid var(--BOX-SHADOW);
+
+                            padding: 0.5rem;
+
+
+
+                            p{
+                                font-size: 1.4rem;
+                                color: var(--FC-TITTLE);
+                            }
+
+                        }
+                    }
+                }
+            }
+
+
+            .times{
+                display: flex;
+                flex-direction: column;
+                width: 28rem;
+                max-width: 100%;
+
+
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    
+                    gap: 0.5rem;
+
+                    flex-wrap: wrap;
+
+
+                    max-height: 15rem;
+
+                    width: 95%;
+
+                    padding: 1rem;
+
+                    overflow: auto;
+
+
+                    li{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        font-size: 1.2rem;
+                        background-color: var(--FC-TITTLE);
+
+                        color: var(--LIGHT-100);
+                        padding: 0.5rem;
+
+                        border-radius: 0.5rem;
+
+                        width: 8rem;
+
+                    }
+                }
+
+            }
+           
+        }
+
+    }
+}
+
+@media(min-width:768px){
+    .newSchedulingContainer{
+        .content{
+            padding-left: 15rem;
+
+
+            form{
+                align-items: start;
+                div:nth-child(1), .date{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: baseline;
+                }
+
+                div:nth-child(1), .date{
+
+                    gap: 0.5rem;
+
+                    
+                    label:nth-child(2){
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+
+                    }
+
+                    label:nth-child(1){
+                        .input{
+                            max-width: 13rem;
+                        }
+                        flex: 1;
+
+                    }
+                }
+
+                button{
+                    width: 97%;
+                }
+
+                
+            }
+        }
+    }
+}
