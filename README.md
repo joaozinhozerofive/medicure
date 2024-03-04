@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">Medicure - api</h1>
+  <h1 align="center">Medicure</h1>
 </p>
 
 Este é o resultado de um projeto pessoal, o Medicure 
