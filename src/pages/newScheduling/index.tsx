@@ -49,11 +49,11 @@ export default function NewScheduling(){
 
     useEffect(() => {
         function setDate(){
-            emptyDate()
+            console.log(formattedDate())
         }
         setDate()
 
-    }, [])
+    }, [formattedDate()])
 
     useEffect(() => {
         async function fetchPatients(){
